@@ -1,0 +1,48 @@
+{
+  "name": "login-with-github",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "cd server && nodemon index.js",
+    "start:frontendAndBackend": "concurrently \"cd server && nodemon index.js \" \"react-scripts start\" ",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "form-data": "^3.0.0",
+    "mdi-react": "^7.0.0",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.12",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "4.0.1",
+    "styled-components": "^5.0.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "joi": "^17.2.1"
+  }
+}
