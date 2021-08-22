@@ -68,5 +68,5 @@ app.get("/", (req, res) => {
   return res.status(200).json({ success: true });
 });
 
-const PORT = process.env.SERVER_PORT || 5000;
-app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log(`Listening on ${port}`));
