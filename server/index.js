@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.json({ type: "text/*" }));
 app.use(bodyParser.urlencoded({ extended: false }));
 
+//Use cors package instead
 // Enabled Access-Control-Allow-Origin", "*" in the header so as to by-pass the CORS error.
 // app.use((req, res, next) => {
 //   res.header("Access-Control-Allow-Origin", "*");
